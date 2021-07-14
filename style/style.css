@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* coomon styles */
+/* common styles */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e5e5e5;
@@ -88,4 +88,34 @@ a {
 .copyright {
   font-size: 18px;
   text-align: center;
+}
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  .banner-container {
+    width: 100%;
+  }
+  .banner {
+    height: 695px;
+    flex-wrap: wrap;
+  }
+  .header-text {
+    font-size: 36px;
+  }
+  .banner img {
+    width: 329px;
+    height: 259.17px;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 5%;
+    flex-direction: column;
+  }
+  .footer-image {
+    width: 271px;
+    height: 63px;
+  }
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
+  }
 }
